@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register page</title>
+        <link rel="stylesheet" href="./css/register_page.css">
+    </head>
+    <body>
+        <form class="form">
+            <p class="title">Please Register </p>
+            <p class="message">Signup Here </p>
+                <div class="flex">
+                    <label>
+                        <input class="input" type="text" placeholder="" required="">
+                        <span>Firstname</span>
+                    </label>
+            
+                    <label>
+                        <input class="input" type="text" placeholder="" required="">
+                        <span>Lastname</span>
+                    </label>
+                </div>  
+                    
+                <label>
+                    <input class="input" type="email" placeholder="" required="">
+                    <span>Email</span>
+                </label> 
+                
+                <label>
+                    <input class="input" type="password" placeholder="" required="">
+                    <span>Password</span>
+                </label>
+                    <label class="form-label"><strong> User Type  </strong></label>
+                        <select name="user_type_id" class="form-control" id="userType" required>
+                
+                            <option value="1">Admin</option>
+                            <option value="2">Technician</option>
+                            <option value="3">IT Support</option>
+                
+                        </select>              
+            <label>
+                <input class="input" type="password" placeholder="" required="">
+                <span>Confirm password</span>
+            </label>
+
+            <button class="submit">Submit</button>
+            <p class="signin">Already have an acount ? <a href="#">Login here</a> </p>
+        </form>
+    </body>
+</html>
