@@ -3,35 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/dashboard.css">
+    <title>admin Dashboard</title>
+    <link rel="stylesheet" href="./css/admin.css">
+    
 </head>
 <body>
-    <div class="nav">
-        <div class="left">
-            <img src="./assets/logo.png" alt="logo">
-        </div>
-        <div class="right">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact Us</a>
-            <a href="#">FAQ</a>
-        </div>
-    </div>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>AGRI</h2>
+            <nav>
+                <ul>
+                    <!-- Dashboard as text-only -->
+                    <li class="dashboard-text">Dashboard</li>
+                    <!-- Manage Documents dropdown -->
+                    <li class="dropdown">
+                        <button class="dropdown-btn" onclick="toggleDropdown()">Manage Documents</button>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Upload Documents</a></li>
+                            <li><a href="#">View Documents</a></li>
+                            <li><a href="#">Delete Documents</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-    <div class="sidenav">
-        <a href="#">Manage Documents</a>
-        <a href="#">Profile</a>
-        <a href="#">Logout</a>
-    </div>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="profile">
+                    <a href="#">Profile <span>Muhammad Ali</span></a>
+                </div>
+            </header>
 
-    <div class="container">
-        <h1>Admin</h1>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button type="button">Search</button>
-        </div>
+            <div class="content-container">
+                <h1>Welcome, Admin!</h1>
+                <div class="data-entry">
+                    <h2>Data Entry Using Google Cloud Vision API</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="category">Category:</label>
+                            <input type="text" id="category" name="category" value="Farmer">
+                        </div>
+                        <div class="form-group">
+                            <label for="file">Choose file:</label>
+                            <input type="file" id="file" name="file">
+                        </div>
+                        <button type="submit" class="upload-btn">Upload Document</button>
+                    </form>
+                    <div class="extracted-text">
+                        <h3>Extracted Text</h3>
+                        <textarea rows="10" readonly>
+MUNICIPAL AGRICULTURE OFFICE
+BASEY, SAMAR
+FARMER PROFILE
+Date Today:
+RSBSA Reference No.: 08-60-02-031-0000660
+FULL NAME OF FARMER: ERWIN CENTORIUM CENTINAJE
+Home Address: BRGY OLD SAN AGUSTIN BASEY, SAMAR
+Civil Status: MARRIED
+Name of Spouse: EMILY D. CENTINAJE
+Spouse Educational Attainment: VOCATIONAL GRADUATE
+                        </textarea>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
+    <script src="./js/button.js"></script>
 </body>
 </html>

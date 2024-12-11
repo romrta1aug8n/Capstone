@@ -1,74 +1,196 @@
-*{
+/* General reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #f0f3ef;
+    color: #355F2E;
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
-a{
-    text-decoration: none;
+.sidebar nav ul li {
+    margin-bottom: 15px;
+    position: relative;
 }
 
-body{
-    background-color: #f1f1f1;
+/* Dashboard text-only */
+.dashboard-text {
+    font-size: 16px;
+    color: #355F2E;
+    padding: 10px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #020c18;
+    cursor: default; /* Non-clickable */
 }
 
-.nav{
+/* Dropdown button styles */
+.dropdown-btn {
+    background-color: #007bff;
+    color: #f9fcf9;
+    font-size: 16px;
+    border: none;
+    padding: 10px;
     width: 100%;
-    height: 65px;
-    padding: 0 2em;
-    background-color: #fff;
-    box-shadow: 0 0 5px #aaa;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+/* Dropdown button hover effect */
+.dropdown-btn:hover {
+    background-color: #dee3e9;
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    background-color: #355F2E;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 100%; /* Below the parent button */
+    width: 100%;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content li a {
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #35495e;
+}
+
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
 }
 
-.nav .left img{
-    height: 35px;
+.search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.nav .right{
-    display: flex;
-    align-items: center;
-    gap: 1.5em;
+.profile a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.nav .right a{
-    color: #333;
+.content-container {
+    padding: 20px;
 }
 
-.nav .right a:hover{
-    text-decoration: underline;
+.content-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
-.sidenav{
-    width: 250px;
-    height: 100vh;
-    background-color: #fff;
-    box-shadow: 0 0 5px #aaa;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 80px 15px 20px 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    z-index: 50;
+.data-entry {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.sidenav a{
-    color: #333;
+.data-entry h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
-.container{
-    padding: 80px 15px 15px 265px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background-color: #0056b3;
+}
+
+.extracted-text h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    background-color: #f9f9f9;
 }

@@ -1,139 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-.form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    padding: 20px;
-    border-radius: 20px;
-    position: absolute;
-    background-color: #1a1a1a;
-    color: #fff;
-    border: 1px solid #09ee2f;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
-  }
-  
-  .form-title {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
-    color: #f3f7f3;
-  }
+.login-container {
+  background: url('./assets/Department-of-Agriculture.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
-  .form-title::before {
-    width: 18px;
-    height: 18px;
-  }
-  
-  .form-title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
-  }
-  
-  .form-title::before,
-  .form-title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: #00bfff;
-  }
-  
-  .input-container {
-    position: relative;
-  }
-  
-  .input-container input, .form button {
-    outline: none;
-    border: 1px solid #e5e7eb;
-    margin: 8px 0;
-  }
-  
-  .input-container input {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    padding-right: 3rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    width: 200px;
-    border-radius: 0.5rem;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  }
-  
-  .input-container span {
-    display: grid;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    place-content: center;
-  }
-  
-  .input-container span svg {
-    color: #9CA3AF;
-    width: 1rem;
-    height: 1rem;
-  }
-  
-  .submit {
-    display: block;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    background-color: darkgreen;
-    color: #ffffff;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    width: 100%;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
-  }
-  .submit:hover {
-    background-color: #00bfff96;
-  }
-  
-  .signup-link {
-    color: #6B7280;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    text-align: center;
-  }
-  
-  .signup-link a {
-    text-decoration: underline;
-    color: darkgreen;
-  }
+.login-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
 
-  body {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+.logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
 
-  @keyframes pulse {
-    from {
-      transform: scale(0.9);
-      opacity: 1;
-    }
-  
-    to {
-      transform: scale(1.8);
-      opacity: 0;
-    }
-  }
-  
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+
+/* Add spacing for new name fields */
+.register-form .form-group {
+  margin-bottom: 15px;
+}
+
+.register-form input {
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  width: 90%;
+}
+/* Dropdown styling */
+form select { 
+  padding: 5px 0px 5px 0px;
+  border: 1px solid #025a18;
+  border-radius: 25px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  text-align: center; /* Centers the selected text */
+  text-align-last: center; /* Ensures selected option text stays centered */
+}
+
+form select:focus {
+  outline: none;
+  border-color: #026918;
+}
+
+form select option {
+  color: #333333;
+  text-align: center;
+}
+
+.login-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+.assistance {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
