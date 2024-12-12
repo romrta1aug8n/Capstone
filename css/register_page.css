@@ -1,20 +1,32 @@
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body { 
+  background: url('../assets/Department-of-Agriculture.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-
 .form {
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 600px;
     padding: 50px;
     border-radius: 20px;
-    position: absolute;
-    background-color: #0f0e0e;
-    color: #fff;
-    border: 1px solid #09ee2f;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 5px #aaa;
+    
   }
   
   .title {
@@ -25,7 +37,7 @@
     display: flex;
     align-items: center;
     padding-left: 30px;
-    color: #f3f7f3;
+    color: #1b1817;
   }
   
   .title::before {
@@ -47,13 +59,13 @@
     width: 16px;
     border-radius: 50%;
     left: 0px;
-    background-color: #00bfff;
+    background-color: #5e5e5e;
   }
   
   .message, 
   .signin {
-    font-size: 14.5px;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    color: #1b1817 (12, 12, 12, 0.7);
   }
   
   .signin {
@@ -65,12 +77,17 @@
   }
   
   .signin a {
-    color: #00bfff;
+    color: #333;
   }
   
   .flex {
     display: flex;
     width: 100%;
+    gap: 10px;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
   
@@ -79,17 +96,27 @@
   }
   
   .form label .input {
-    background-color: #333;
-    color: #fff;
-    width: 96%;
+    background-color: #f1f1f1;
+    color: #333;
+    width: 100%;
     padding: 20px 05px 05px 10px;
     outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
+    border: 1px solid;
+    border-radius: 10px;
+  }
+
+  .form select {
+    background-color: #f1f1f1;
+    color: #333;
+    width: 100%;
+    padding: 10px 05px;
+    outline: 0;
+    border: 1px solid;
     border-radius: 10px;
   }
   
   .form label .input + span {
-    color: rgba(255, 255, 255, 0.5);
+    color: #333;
     position: absolute;
     left: 10px;
     top: 0px;
@@ -105,7 +132,7 @@
   
   .form label .input:focus + span,
   .form label .input:valid + span {
-    color: #18cf07;
+    color: #333;
     top: 0px;
     font-size: 0.7em;
     font-weight: 600;
@@ -123,11 +150,11 @@
     color: #fff;
     font-size: 16px;
     transform: .3s ease;
-    background-color: darkgreen;
+    background-color: #449D44;
   }
   
   .submit:hover {
-    background-color: #00bfff96;
+    background-color: #5CB85C;
   }
   
   @keyframes pulse {

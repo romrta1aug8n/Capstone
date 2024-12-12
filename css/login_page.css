@@ -1,4 +1,8 @@
 body {
+  background: url('../assets/Department-of-Agriculture.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -10,7 +14,7 @@ body {
 }
 
 .login-container {
-  background: url('./assets/Department-of-Agriculture.jpg') no-repeat center center/cover;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,11 +31,8 @@ body {
   text-align: center;
 }
 
-.logo h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #000;
+.logo img {
+  width: 100px;
 }
 
 .input-group {
@@ -68,31 +69,8 @@ body {
   border: 1px solid #ccc;
   width: 90%;
 }
-/* Dropdown styling */
-form select { 
-  padding: 5px 0px 5px 0px;
-  border: 1px solid #025a18;
-  border-radius: 25px;
-  font-size: 1rem;
-  background-color: #ffffff;
-  color: #333333;
-  cursor: pointer;
-  text-align: center; /* Centers the selected text */
-  text-align-last: center; /* Ensures selected option text stays centered */
-}
-
-form select:focus {
-  outline: none;
-  border-color: #026918;
-}
-
-form select option {
-  color: #333333;
-  text-align: center;
-}
-
 .login-button {
-  background-color: #007bff;
+  background-color: #449D44;
   color: #fff;
   padding: 0.8rem;
   border: none;
@@ -105,7 +83,8 @@ form select option {
 }
 
 .login-button:hover {
-  background-color: #0056b3;
+    background-color: #5CB85C;
+    
 }
 
 .assistance {

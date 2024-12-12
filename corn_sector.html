@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin Dashboard</title>
     <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/corn_sector.css">
+    
     
 </head>
 <body>
@@ -19,13 +21,20 @@
                     <!-- Manage Documents dropdown -->
                     <li class="dropdown">
                         <button class="dropdown-btn" onclick="toggleDropdown()">Manage Documents</button>
-                        <ul class="dropdown-content">
+                        <ul class="dropdown-corn">
                             <li><a href="#">Upload Documents</a></li>
                             <li><a href="#">View Documents</a></li>
                             <li><a href="#">Delete Documents</a></li>
                         </ul>
                     </li>
-                    
+                    <li class="dropdown">
+                        <button class="dropdn-btn" onclick="toggleDropdown()">Reports</button>
+                        <ul class="dropdown-corn">
+                            <li><a href="#">Production Report</a></li>
+                            <li><a href="#">Damage Report</a></li>
+                            
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -43,7 +52,7 @@
             </header>
 
             <div class="content-container">
-                <h1>Welcome, Admin!</h1>
+                <h1>Welcome, Technician!</h1>
                 <div class="data-entry">
                     <h2>Data Entry Using Google Cloud Vision API</h2>
                     <form>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin Dashboard</title>
     <link rel="stylesheet" href="./css/admin.css">
+    <link rel="stylesheet" href="./css/rice_sector.css">
     
 </head>
 <body>
@@ -25,7 +26,14 @@
                             <li><a href="#">Delete Documents</a></li>
                         </ul>
                     </li>
-                    
+                    <li class="drpdn">
+                        <button class="drpdn-btn" onclick="toggleDropdown()">Reports</button>
+                        <ul class="dropdown-report">
+                            <li><a href="#">Production Report</a></li>
+                            <li><a href="#">Damage Report</a></li>
+                            
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </aside>
@@ -43,7 +51,7 @@
             </header>
 
             <div class="content-container">
-                <h1>Welcome, Admin!</h1>
+                <h1>Welcome, Technician!</h1>
                 <div class="data-entry">
                     <h2>Data Entry Using Google Cloud Vision API</h2>
                     <form>
