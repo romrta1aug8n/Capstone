@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h1>A.G.R.I RKS</h1>
+        <a href="#">Dashboard</a>
+        <a href="#">Accounts</a>
+        <a href="#">Add New Account</a>
+        <a href="#">Chats</a>
+        <a href="#">Resources</a>
+        <a href="#">Office</a>
+        <span>Others</span>
+        <a href="#">Profile</a>
+        <a href="#">Configuration</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="search-container">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="profile">
+                <li><a href="./profile.html">Profile</a></li>
+                <li><a href="./login_page.html">Logout</a></li>
+            </div>
+        </div>
+    </div>
+
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <h3>Accounts</h3>
+                    <h1>145</h1>
+                    <p>12% increase</p>
+                </div>
+                <div class="card">
+                    <h3>Enrollees</h3>
+                    <h1>145</h1>
+                    <p>12% increase</p>
+                </div>
+                <div class="card">
+                    <h3>Personnel</h3>
+                    <h1>$3,264</h1>
+                    <p>8% increase</p>
+                </div>
+                <div class="card">
+                    <h3>Records</h3>
+                    <h1>145</h1>
+                    <p>12% increase</p>
+                </div>
+            </div> 
+
+            <h2>Profiling of Enrollees</h2>
+            <div class="charts">
+                <div class="chart">
+                    <canvas id="enrolleesChart"></canvas>
+                </div>
+
+            <div class="cards2">
+                <div class="card2">
+                    <h3>Organization Members | This Year</h3>
+                    <h1>1244</h1>
+                    <span>12% decrease</span>
+                </div>
+                <div class="card2">
+                    <h3>Farm Facilities | This Year</h3>
+                    <h1>1244</h1>
+                    <span>12% decrease</span>
+                </div>
+                <div class="card2">
+                    <h3>Farm Machineries | This Year</h3>
+                    <h1>1244</h1>
+                    <span>12% decrease</span>
+                </div>
+                <div class="card2">
+                    <h3>Livestocks | This Year</h3>
+                    <h1>1244</h1>
+                    <span>12% decrease</span>
+                </div>
+            </div>
+
+            <h2>Farm Operation Components</h2>
+            <div class="charts2">
+                <div class="chart2">
+                    <canvas id="chartLivestock"></canvas>
+                </div>
+                <div class="chart2">
+                    <canvas id="chartHVCDP"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>
